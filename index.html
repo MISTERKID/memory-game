@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryMaster Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>MemoryMaster Pro</h1>
+            <div id="stats">
+                <div class="stat">
+                    <i class="fas fa-sync-alt"></i>
+                    <span id="moves-count">0</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span id="time-count">0:00</span>
+                </div>
+            </div>
+        </header>
+        <main id="game-board"></main>
+        <footer>
+            <button id="start-button">New Game</button>
+            <button id="reset-button">Reset</button>
+        </footer>
+    </div>
+    <div id="win-modal" class="modal">
+        <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You've completed the game in <span id="final-moves"></span> moves and <span id="final-time"></span>.</p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <audio id="flip-sound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_0625c1539c.mp3?filename=pop-39222.mp3"></audio>
+    <audio id="match-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8940d4d.mp3?filename=laser-gun-81720.mp3"></audio>
+    <audio id="win-sound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_bf3620f005.mp3?filename=success-fanfare-trumpets-6185.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
